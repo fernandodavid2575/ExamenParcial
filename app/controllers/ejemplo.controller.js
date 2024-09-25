@@ -82,7 +82,7 @@ exports.getEjemploByName = (req, res) => {
 exports.updateById = async (req, res) => {
     try {
         let ejemploId = req.params.id;
-        let ejemplo = await Ejemplo.findByPk(usuarioId);
+        let ejemplo = await Ejemplo.findByPk(ejemploId);
     
         if (!ejemplo) {
             res.status(404).json({
