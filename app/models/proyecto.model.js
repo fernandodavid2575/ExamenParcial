@@ -12,8 +12,7 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING
         },
         fecha_creacion: {
-            type: Sequelize.DATE,
-            type: Sequelize.DATEONLY  
+            type: Sequelize.DATE
         }
     });
     return Proyecto;
