@@ -25,7 +25,7 @@ exports.create = (req, res) => {
 
 exports.getProyectoById = (req, res) => {
     let proyectoId = req.params.id;
-    Proyecto.findByPk(usuarioId)
+    Proyecto.findByPk(proyectoId)
         .then(proyecto => {
             res.status(200).json({
                 message: "proyecto obtenido exitosamente con id = " + proyectoId,
